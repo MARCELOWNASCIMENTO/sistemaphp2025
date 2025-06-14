@@ -1,0 +1,31 @@
+***inicio *** colar no mysql***
+
+create database sistema
+
+use sistema
+use sistema
+create table users (
+	id int primary key auto_increment,
+	Username varchar(50),
+	Password varchar(300),
+	Created_at datetime
+);
+
+insert into users (id, Username, Password, Created_at) values (1, 'marcelo','abc@123##',curdate())
+
+
+select * from users
+
+***FIM *** colar no mysql***
+
+AZURE - 
+CRIAR APP SERVICE PLAN PARA LINUX
+
+CRIAR WEB APP COM O RUN TIME PHP 8
+	IMPORTAR O CODIGO DO GITHUB
+	EM "SETTINGS\NETWORKING", OBTENHA TODOS OS IP'S EXTERNOS QUE SERÃO NECESSÁRIOS PARA LIBERAR O ACESSO AO PAAS
+	EDITE O CONFIG.PHP E ADICIONE OS PARAMETROS DO DATABASE
+
+CRIAR MYSQL DATABASE
+	EM "SETTINGS\SERVER PARAMETERS", DEFINA COMO "OFF" O PARAMETRO "REQUIRE_SECURE_TRANSPORT"
+	EM "SETTINGS\NETWORKING", ACRESCENTE TODOS OS ENDEREÇOS DO WEBAPP PARA QUE O DATABASE ACEITE COMUNICAÇÃO EXTERNA.
